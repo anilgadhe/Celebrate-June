@@ -1,0 +1,144 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffaf0;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+#hero {
+  height: 80vh;
+  background-image: url('./public/images/wari.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-shadow: 8px 8px 10px rgba(95, 32, 32, 0.8);
+}
+
+#hero h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+#hero p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.festival-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.festival-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.festival-card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#festivals h2 {
+  font-weight: bold;
+  color: #8B0000;
+  position: relative;
+}
+
+#festivals h2::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color: #ff9933;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+footer {
+  background: #8B0000;
+  color: #fff;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+}
+
+
+#loader{
+    height: 100%;
+    width: 100%;
+    background-color:black;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    transition: all ease 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#loader .loader-1{
+    position: absolute;
+    opacity: 0;
+    animation-name: load;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+}
+
+
+
+ #loader .loader-1 h1{ 
+     /* font-size: 4vw !important;  */
+    color: #FB4F2D;
+    /* background: linear-gradient(to right , orange,orangered);  */
+}
+
+#loader .loader-1:nth-child(2){
+  animation-delay: 4s;
+}
+
+#loader .loader-1:nth-child(3){
+    animation-delay: 6s;
+  }
+
+  #loader .loader-1:nth-child(4){
+    animation-delay: 8s;
+  }
+
+  
+  #loader .loader-1:nth-child(5){
+    animation-delay: 10s;
+  }
+
+  
+  #loader .loader-1:nth-child(6){
+    animation-delay: 12s;
+  }
+
+@keyframes load{
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
