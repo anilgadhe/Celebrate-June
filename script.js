@@ -27,4 +27,4 @@ document.querySelectorAll('.festival-card').forEach(card => {
 var loader = document.querySelector("#loader");
 setTimeout(function () {
     loader.style.top = "-100%"
-}, 14000)
+}, 11000)
